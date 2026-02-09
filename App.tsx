@@ -302,41 +302,41 @@ const Step4Visual = () => (
 // --- Sections ---
 
 const DashboardContent = () => (
-  <div className="h-full w-full bg-[#050505] flex flex-col p-8 text-left overflow-y-auto scrollbar-hide select-none">
-    <div className="flex justify-center mb-10">
-      <div className="bg-[#111] border border-white/10 px-4 py-2 rounded-2xl flex items-center gap-6 shadow-xl">
+  <div className="h-full w-full bg-[#050505] flex flex-col p-4 md:p-8 text-left overflow-y-auto scrollbar-hide select-none">
+    <div className="flex justify-center mb-6 md:mb-10">
+      <div className="bg-[#111] border border-white/10 px-3 py-1.5 md:px-4 md:py-2 rounded-2xl flex items-center gap-3 md:gap-6 shadow-xl">
         <div className="bg-red-600 p-1.5 rounded-lg shadow-lg shadow-red-600/20 animate-pulse">
-          <BoltfyLogo className="w-4 h-4" />
+          <BoltfyLogo className="w-3 h-3 md:w-4 md:h-4" />
         </div>
-        <Plus className="w-4 h-4 text-white/40" />
-        <div className="w-px h-4 bg-white/10 mx-2"></div>
-        <LayoutGrid className="w-4 h-4 text-red-500" />
-        <BookOpen className="w-4 h-4 text-white/40" />
-        <Users className="w-4 h-4 text-white/40" />
-        <Database className="w-4 h-4 text-white/40" />
+        <Plus className="w-3 h-3 md:w-4 md:h-4 text-white/40" />
+        <div className="w-px h-3 md:h-4 bg-white/10 mx-1 md:mx-2"></div>
+        <LayoutGrid className="w-3 h-3 md:w-4 md:h-4 text-red-500" />
+        <BookOpen className="w-3 h-3 md:w-4 md:h-4 text-white/40" />
+        <Users className="w-3 h-3 md:w-4 md:h-4 text-white/40" />
+        <Database className="w-3 h-3 md:w-4 md:h-4 text-white/40" />
       </div>
     </div>
-    <div className="mb-10">
-      <h3 className="text-2xl font-extrabold text-white mb-1">Painel Boltfy</h3>
+    <div className="mb-6 md:mb-10">
+      <h3 className="text-xl md:text-2xl font-extrabold text-white mb-1">Painel Boltfy</h3>
       <div className="flex items-center gap-1.5">
         <div className="w-1.5 h-1.5 rounded-full bg-red-500 shadow-[0_0_8px_rgba(255,0,0,0.8)]"></div>
-        <span className="text-[9px] font-bold text-red-500 uppercase tracking-widest">Workspace Ativo</span>
+        <span className="text-[8px] md:text-[9px] font-bold text-red-500 uppercase tracking-widest">Workspace Ativo</span>
       </div>
     </div>
-    <div className="grid grid-cols-1 md:grid-cols-12 gap-6 mb-12">
-      <div className="md:col-span-8 bg-[#0a0a0a] border border-red-900/10 rounded-[2.5rem] p-10 relative overflow-hidden group shadow-2xl">
-        <h4 className="text-3xl font-extrabold mb-4 text-white">App Configurado</h4>
-        <p className="text-white/40 text-[11px] mb-8 max-w-md leading-relaxed">Sua infraestrutura está pronta. Utilize as ferramentas de prospecção e escala para crescer.</p>
-        <button className="bg-red-600 text-white px-6 py-3 rounded-2xl text-[11px] font-black flex items-center gap-2.5 shadow-xl shadow-red-600/20">
-          <Box className="w-3.5 h-3.5" /> Lançar Aplicativo
+    <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6 mb-12">
+      <div className="md:col-span-8 bg-[#0a0a0a] border border-red-900/10 rounded-2xl md:rounded-[2.5rem] p-6 md:p-10 relative overflow-hidden group shadow-2xl">
+        <h4 className="text-xl md:text-3xl font-extrabold mb-4 text-white">App Configurado</h4>
+        <p className="text-white/40 text-[10px] md:text-[11px] mb-8 max-w-md leading-relaxed">Sua infraestrutura está pronta. Utilize as ferramentas de prospecção e escala para crescer.</p>
+        <button className="bg-red-600 text-white px-5 py-2.5 md:px-6 md:py-3 rounded-xl md:rounded-2xl text-[10px] md:text-[11px] font-black flex items-center gap-2 md:gap-2.5 shadow-xl shadow-red-600/20">
+          <Box className="w-3 md:w-3.5 h-3 md:h-3.5" /> Lançar Aplicativo
         </button>
       </div>
-      <div className="md:col-span-4 bg-[#0a0a0a] border border-red-900/10 rounded-[2.5rem] p-8 flex flex-col justify-between shadow-2xl">
-        <div className="flex items-center justify-between mb-4"><span className="text-[10px] text-white/40 font-bold uppercase tracking-widest">Métricas</span><BarChart3 className="w-4 h-4 text-red-600" /></div>
-        <p className="text-6xl font-black text-white mb-6">712</p>
-        <div className="flex items-end gap-1.5 h-16">
+      <div className="md:col-span-4 bg-[#0a0a0a] border border-red-900/10 rounded-2xl md:rounded-[2.5rem] p-5 md:p-8 flex flex-col justify-between shadow-2xl">
+        <div className="flex items-center justify-between mb-4"><span className="text-[9px] md:text-[10px] text-white/40 font-bold uppercase tracking-widest">Métricas</span><BarChart3 className="w-3.5 h-3.5 md:w-4 md:h-4 text-red-600" /></div>
+        <p className="text-4xl md:text-6xl font-black text-white mb-6">712</p>
+        <div className="flex items-end gap-1 md:gap-1.5 h-12 md:h-16">
           {[30, 50, 40, 70, 45, 90, 60].map((h, i) => (
-            <div key={i} className={`flex-1 rounded-xl transition-all duration-500 ${i === 5 ? 'bg-red-600 shadow-[0_0_15px_rgba(255,0,0,0.4)]' : 'bg-red-900/20'}`} style={{ height: `${h}%` }}></div>
+            <div key={i} className={`flex-1 rounded-lg md:rounded-xl transition-all duration-500 ${i === 5 ? 'bg-red-600 shadow-[0_0_15px_rgba(255,0,0,0.4)]' : 'bg-red-900/20'}`} style={{ height: `${h}%` }}></div>
           ))}
         </div>
       </div>
@@ -363,16 +363,16 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed top-8 left-0 right-0 z-50 flex justify-center px-6">
-      <nav className="w-full max-w-6xl h-[72px] bg-black/60 backdrop-blur-2xl border border-white/10 rounded-full flex items-center justify-between px-8 shadow-[0_20px_50px_rgba(0,0,0,0.5),inset_0_1px_1px_rgba(255,255,255,0.1)] relative">
+    <div className="fixed top-4 md:top-8 left-0 right-0 z-50 flex justify-center px-4 md:px-6">
+      <nav className="w-full max-w-6xl h-14 md:h-[72px] bg-black/60 backdrop-blur-2xl border border-white/10 rounded-full flex items-center justify-between px-4 md:px-8 shadow-[0_20px_50px_rgba(0,0,0,0.5),inset_0_1px_1px_rgba(255,255,255,0.1)] relative">
 
         {/* Logo Section with Glow */}
-        <div className="flex items-center gap-3 relative cursor-pointer group" onClick={scrollToTop}>
-          <div className="absolute -left-2 w-16 h-16 bg-red-600/20 blur-2xl rounded-full -z-10 group-hover:bg-red-600/30 transition-all duration-500"></div>
-          <div className="w-11 h-11 flex items-center justify-center bg-black/60 rounded-full border border-white/10 overflow-hidden shadow-[inset_0_0_15px_rgba(255,0,0,0.2)] group-hover:border-red-600/30 transition-colors">
-            <BoltfyLogo className="w-7 h-7" />
+        <div className="flex items-center gap-2 md:gap-3 relative cursor-pointer group" onClick={scrollToTop}>
+          <div className="absolute -left-2 w-12 h-12 md:w-16 md:h-16 bg-red-600/20 blur-2xl rounded-full -z-10 group-hover:bg-red-600/30 transition-all duration-500"></div>
+          <div className="w-9 h-9 md:w-11 md:h-11 flex items-center justify-center bg-black/60 rounded-full border border-white/10 overflow-hidden shadow-[inset_0_0_15px_rgba(255,0,0,0.2)] group-hover:border-red-600/30 transition-colors">
+            <BoltfyLogo className="w-5 h-5 md:w-7 md:h-7" />
           </div>
-          <span className="text-xl font-bold text-white tracking-tighter group-hover:text-red-500 transition-colors">Boltfy</span>
+          <span className="text-lg md:text-xl font-bold text-white tracking-tighter group-hover:text-red-500 transition-colors">Boltfy</span>
         </div>
 
         {/* Desktop Navigation Links */}
@@ -420,15 +420,15 @@ const Hero = () => {
   const scrollToPricing = () => document.getElementById('precos')?.scrollIntoView({ behavior: 'smooth' });
 
   return (
-    <section className="pt-48 pb-12 px-6 relative overflow-hidden bg-black">
+    <section className="pt-32 md:pt-48 pb-12 px-6 relative overflow-hidden bg-black">
       <div className="max-w-5xl mx-auto text-center relative z-10 mb-12">
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-600/10 border border-red-600/20 text-red-500 text-xs font-bold uppercase tracking-widest mb-8 animate-in fade-in slide-in-from-top duration-1000">
-          <BoltfyLogo className="w-4 h-4" /> Ultra Performance SaaS Scaling
+        <div className="inline-flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-red-600/10 border border-red-600/20 text-red-500 text-[10px] md:text-xs font-bold uppercase tracking-widest mb-8 animate-in fade-in slide-in-from-top duration-1000">
+          <BoltfyLogo className="w-3.5 h-3.5 md:w-4 md:h-4" /> Ultra Performance SaaS Scaling
         </div>
-        <h1 className="text-4xl md:text-7xl font-extrabold leading-[1.1] mb-8 text-white tracking-tighter">
+        <h1 className="text-3xl md:text-7xl font-extrabold leading-[1.2] md:leading-[1.1] mb-8 text-white tracking-tighter">
           Crie e Escale Apps <br /> <span className="text-red-500">na Velocidade da Luz</span>
         </h1>
-        <p className="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto mb-12 leading-relaxed">A infraestrutura definitiva para transformar sua ideia em um SaaS milionário em minutos.</p>
+        <p className="text-slate-400 text-base md:text-xl max-w-2xl mx-auto mb-10 md:mb-12 leading-relaxed">A infraestrutura definitiva para transformar sua ideia em um SaaS milionário em minutos.</p>
 
         {/* NEW CTA BUTTONS FROM REFERENCE IMAGE */}
         <div className="flex flex-col items-center gap-6">
@@ -452,14 +452,14 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="py-12 px-6 relative overflow-hidden flex flex-col items-center text-center mt-8">
+      <div className="py-8 md:py-12 px-4 md:px-6 relative overflow-hidden flex flex-col items-center text-center mt-4 md:mt-8">
         <div className="w-full max-w-5xl relative group">
-          <div className="relative z-10 p-3 bg-[#0a0a0a] rounded-t-[3rem] shadow-[0_80px_160px_-40px_rgba(0,0,0,1)] border-t border-white/10">
-            <div className="bg-black rounded-t-[2.5rem] overflow-hidden border border-white/5 aspect-[16/10] relative">
+          <div className="relative z-10 p-2 md:p-3 bg-[#0a0a0a] rounded-t-[2rem] md:rounded-t-[3rem] shadow-[0_80px_160px_-40px_rgba(0,0,0,1)] border-t border-white/10">
+            <div className="bg-black rounded-t-[1.5rem] md:rounded-t-[2.5rem] overflow-hidden border border-white/5 aspect-[16/10] relative">
               <DashboardContent />
             </div>
           </div>
-          <div className="h-7 bg-[#111] w-[106%] -ml-[3%] rounded-b-2xl relative z-20 shadow-2xl"></div>
+          <div className="h-4 md:h-7 bg-[#111] w-[104%] -ml-[2%] md:w-[106%] md:-ml-[3%] rounded-b-xl md:rounded-b-2xl relative z-20 shadow-2xl"></div>
         </div>
       </div>
     </section>
@@ -477,23 +477,23 @@ const FourStepsSection = () => {
   return (
     <section id="metodo" className="py-24 px-6 bg-black relative overflow-hidden scroll-mt-32">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-24">
-          <span className="text-red-500 font-black uppercase tracking-[0.3em] text-xs mb-4 block">Boltfy Elite Tier</span>
-          <h2 className="text-4xl md:text-6xl font-black mb-8 leading-tight tracking-tight text-white">
+        <div className="text-center mb-16 md:mb-24">
+          <span className="text-red-500 font-black uppercase tracking-[0.3em] text-[10px] md:text-xs mb-4 block">Boltfy Elite Tier</span>
+          <h2 className="text-3xl md:text-6xl font-black mb-6 md:mb-8 leading-tight tracking-tight text-white">
             Seu SaaS de Alta Performance <br />
             <span className="text-red-500">em 4 Etapas</span>
           </h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-14">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-14">
           {steps.map((s, i) => (
-            <div key={i} className="group flex flex-col gap-10 p-10 bg-[#070707] border border-white/5 rounded-[3.5rem] hover:border-red-600/40 transition-all shadow-2xl relative">
-              <div className="absolute top-10 right-10 text-6xl font-black text-white/[0.03] group-hover:text-red-600/5 transition-colors">{s.step}</div>
-              <div className="relative z-10 space-y-6">
-                <div className="space-y-4">
-                  <h3 className="text-3xl font-black text-white tracking-tight group-hover:text-red-500 transition-colors">{s.title}</h3>
-                  <p className="text-slate-400 leading-relaxed text-lg max-w-md">{s.desc}</p>
+            <div key={i} className="group flex flex-col gap-6 md:gap-10 p-6 md:p-10 bg-[#070707] border border-white/5 rounded-[2rem] md:rounded-[3.5rem] hover:border-red-600/40 transition-all shadow-2xl relative">
+              <div className="absolute top-6 md:top-10 right-6 md:right-10 text-4xl md:text-6xl font-black text-white/[0.03] group-hover:text-red-600/5 transition-colors">{s.step}</div>
+              <div className="relative z-10 space-y-4 md:space-y-6">
+                <div className="space-y-2 md:space-y-4">
+                  <h3 className="text-2xl md:text-3xl font-black text-white tracking-tight group-hover:text-red-500 transition-colors">{s.title}</h3>
+                  <p className="text-slate-400 leading-relaxed text-base md:text-lg max-w-md">{s.desc}</p>
                 </div>
-                <div className="pt-4 overflow-hidden group-hover:scale-[1.02] transition-transform duration-700 ease-out">{s.visual}</div>
+                <div className="pt-2 md:pt-4 overflow-hidden group-hover:scale-[1.02] transition-transform duration-700 ease-out">{s.visual}</div>
               </div>
             </div>
           ))}
@@ -505,45 +505,45 @@ const FourStepsSection = () => {
 
 const ResultsSection = () => {
   return (
-    <section className="py-24 px-6 bg-black border-t border-red-900/10 overflow-visible relative">
+    <section className="py-16 md:py-24 px-6 bg-black border-t border-red-900/10 overflow-visible relative">
       <div className="max-w-7xl mx-auto relative">
-        <div className="text-center mb-16 animate-in fade-in slide-in-from-bottom duration-1000">
-          <h2 className="text-5xl md:text-8xl font-black mb-6 tracking-tighter">
+        <div className="text-center mb-12 md:mb-16 animate-in fade-in slide-in-from-bottom duration-1000">
+          <h2 className="text-4xl md:text-8xl font-black mb-4 md:mb-6 tracking-tighter">
             Nossos <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#FF0000] via-[#8B0000] to-[#FF0000] drop-shadow-[0_0_35px_rgba(255,0,0,0.6)] bg-[length:200%_200%] animate-[shimmer_4s_infinite_linear]">Resultados</span>
           </h2>
-          <p className="text-slate-500 text-lg font-bold uppercase tracking-[0.3em]">Conectando Negócios em Escala Global</p>
+          <p className="text-slate-500 text-xs md:text-lg font-bold uppercase tracking-[0.2em] md:tracking-[0.3em]">Conectando Negócios em Escala Global</p>
         </div>
 
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
-          <div className="w-full lg:w-1/2 flex items-center justify-center min-h-[500px] overflow-visible">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-8 md:gap-12">
+          <div className="w-full lg:w-1/2 flex items-center justify-center min-h-[300px] md:min-h-[500px] overflow-visible">
             <CinematicGlobe />
           </div>
 
           <div className="flex flex-col gap-8 w-full lg:max-w-md">
-            <div className="p-10 bg-[#0a0a0a] border border-red-600/10 rounded-[3rem] group relative overflow-hidden shadow-2xl hover:border-red-600/40 transition-all">
-              <div className="flex items-center gap-8">
-                <div className="w-20 h-20 bg-red-600/10 rounded-[2rem] flex items-center justify-center text-[#FF0000] shadow-[0_0_30px_rgba(255,0,0,0.2)]">
-                  <Box className="w-10 h-10" />
+            <div className="p-6 md:p-10 bg-[#0a0a0a] border border-red-600/10 rounded-[2rem] md:rounded-[3rem] group relative overflow-hidden shadow-2xl hover:border-red-600/40 transition-all">
+              <div className="flex items-center gap-6 md:gap-8">
+                <div className="w-14 h-14 md:w-20 md:h-20 bg-red-600/10 rounded-2xl md:rounded-[2rem] flex items-center justify-center text-[#FF0000] shadow-[0_0_30px_rgba(255,0,0,0.2)]">
+                  <Box className="w-6 h-6 md:w-10 md:h-10" />
                 </div>
                 <div>
-                  <h3 className="text-6xl font-black text-white mb-1 tracking-tighter leading-none">
+                  <h3 className="text-4xl md:text-6xl font-black text-white mb-1 tracking-tighter leading-none">
                     +<CountUp end={2739} />
                   </h3>
-                  <p className="text-slate-500 font-black text-[10px] uppercase tracking-[0.3em] mt-2">SaaS desenvolvidos</p>
+                  <p className="text-slate-500 font-black text-[8px] md:text-[10px] uppercase tracking-[0.2em] md:tracking-[0.3em] mt-1 md:mt-2">SaaS desenvolvidos</p>
                 </div>
               </div>
             </div>
 
-            <div className="p-10 bg-[#0a0a0a] border border-red-600/10 rounded-[3rem] group relative overflow-hidden shadow-2xl hover:border-red-600/40 transition-all">
-              <div className="flex items-center gap-8">
-                <div className="w-20 h-20 bg-red-600/10 rounded-[2rem] flex items-center justify-center text-[#FF0000] shadow-[0_0_30px_rgba(255,0,0,0.2)]">
-                  <TrendingUp className="w-10 h-10" />
+            <div className="p-6 md:p-10 bg-[#0a0a0a] border border-red-600/10 rounded-[2rem] md:rounded-[3rem] group relative overflow-hidden shadow-2xl hover:border-red-600/40 transition-all">
+              <div className="flex items-center gap-6 md:gap-8">
+                <div className="w-14 h-14 md:w-20 md:h-20 bg-red-600/10 rounded-2xl md:rounded-[2rem] flex items-center justify-center text-[#FF0000] shadow-[0_0_30px_rgba(255,0,0,0.2)]">
+                  <TrendingUp className="w-6 h-6 md:w-10 md:h-10" />
                 </div>
                 <div>
-                  <h3 className="text-6xl font-black text-white mb-1 tracking-tighter leading-none">
+                  <h3 className="text-4xl md:text-6xl font-black text-white mb-1 tracking-tighter leading-none">
                     +<CountUp end={632} suffix="k" />
                   </h3>
-                  <p className="text-slate-500 font-black text-[10px] uppercase tracking-[0.3em] mt-2">Faturamento mensal</p>
+                  <p className="text-slate-500 font-black text-[8px] md:text-[10px] uppercase tracking-[0.2em] md:tracking-[0.3em] mt-1 md:mt-2">Faturamento mensal</p>
                 </div>
               </div>
             </div>
@@ -586,13 +586,13 @@ const Pricing = () => {
   return (
     <section id="precos" className="py-24 px-6 relative border-t border-red-900/10 bg-black scroll-mt-32">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-24">
-          <h2 className="text-4xl md:text-6xl font-black mb-4 tracking-tighter text-white">Escolha o plano ideal para você</h2>
-          <p className="text-slate-400 text-lg md:text-xl font-medium">Planos flexíveis para todas as necessidades</p>
+        <div className="text-center mb-16 md:mb-24">
+          <h2 className="text-3xl md:text-6xl font-black mb-4 tracking-tighter text-white">Escolha o plano ideal para você</h2>
+          <p className="text-slate-400 text-base md:text-xl font-medium">Planos flexíveis para todas as necessidades</p>
         </div>
-        <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto items-stretch">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12 max-w-4xl mx-auto items-stretch">
           {plans.map((p, i) => (
-            <div key={i} className={`relative flex flex-col p-8 rounded-[2.5rem] border transition-all duration-500 bg-[#080808] ${p.popular ? 'border-red-600 shadow-[0_0_60px_rgba(220,38,38,0.2)] scale-[1.05] z-10' : 'border-white/5'}`}>
+            <div key={i} className={`relative flex flex-col p-6 md:p-8 rounded-[2rem] md:rounded-[2.5rem] border transition-all duration-500 bg-[#080808] ${p.popular ? 'border-red-600 shadow-[0_0_60px_rgba(220,38,38,0.2)] md:scale-[1.05] z-10' : 'border-white/5'}`}>
 
               {p.popular && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2">
