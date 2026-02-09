@@ -316,7 +316,7 @@ const DashboardContent = () => (
         <Database className="w-3 h-3 md:w-4 md:h-4 text-white/40" />
       </div>
     </div>
-    <div className="mb-6 md:mb-10">
+    <div className="mb-6 md:mb-10 w-full flex flex-col items-center md:items-start text-center md:text-left">
       <h3 className="text-xl md:text-2xl font-extrabold text-white mb-1">Painel Boltfy</h3>
       <div className="flex items-center gap-1.5">
         <div className="w-1.5 h-1.5 rounded-full bg-red-500 shadow-[0_0_8px_rgba(255,0,0,0.8)]"></div>
@@ -324,17 +324,17 @@ const DashboardContent = () => (
       </div>
     </div>
     <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6 mb-12">
-      <div className="md:col-span-8 bg-[#0a0a0a] border border-red-900/10 rounded-2xl md:rounded-[2.5rem] p-6 md:p-10 relative overflow-hidden group shadow-2xl">
+      <div className="md:col-span-8 bg-[#0a0a0a] border border-red-900/10 rounded-2xl md:rounded-[2.5rem] p-6 md:p-10 relative overflow-hidden group shadow-2xl flex flex-col items-center md:items-start text-center md:text-left">
         <h4 className="text-xl md:text-3xl font-extrabold mb-4 text-white">App Configurado</h4>
         <p className="text-white/40 text-[10px] md:text-[11px] mb-8 max-w-md leading-relaxed">Sua infraestrutura está pronta. Utilize as ferramentas de prospecção e escala para crescer.</p>
         <button className="bg-red-600 text-white px-5 py-2.5 md:px-6 md:py-3 rounded-xl md:rounded-2xl text-[10px] md:text-[11px] font-black flex items-center gap-2 md:gap-2.5 shadow-xl shadow-red-600/20">
           <Box className="w-3 md:w-3.5 h-3 md:h-3.5" /> Lançar Aplicativo
         </button>
       </div>
-      <div className="md:col-span-4 bg-[#0a0a0a] border border-red-900/10 rounded-2xl md:rounded-[2.5rem] p-5 md:p-8 flex flex-col justify-between shadow-2xl">
-        <div className="flex items-center justify-between mb-4"><span className="text-[9px] md:text-[10px] text-white/40 font-bold uppercase tracking-widest">Métricas</span><BarChart3 className="w-3.5 h-3.5 md:w-4 md:h-4 text-red-600" /></div>
+      <div className="md:col-span-4 bg-[#0a0a0a] border border-red-900/10 rounded-2xl md:rounded-[2.5rem] p-5 md:p-8 flex flex-col justify-between shadow-2xl items-center md:items-stretch">
+        <div className="flex items-center justify-between mb-4 w-full"><span className="text-[9px] md:text-[10px] text-white/40 font-bold uppercase tracking-widest">Métricas</span><BarChart3 className="w-3.5 h-3.5 md:w-4 md:h-4 text-red-600" /></div>
         <p className="text-4xl md:text-6xl font-black text-white mb-6">712</p>
-        <div className="flex items-end gap-1 md:gap-1.5 h-12 md:h-16">
+        <div className="flex items-end gap-1 md:gap-1.5 h-12 md:h-16 w-full">
           {[30, 50, 40, 70, 45, 90, 60].map((h, i) => (
             <div key={i} className={`flex-1 rounded-lg md:rounded-xl transition-all duration-500 ${i === 5 ? 'bg-red-600 shadow-[0_0_15px_rgba(255,0,0,0.4)]' : 'bg-red-900/20'}`} style={{ height: `${h}%` }}></div>
           ))}
