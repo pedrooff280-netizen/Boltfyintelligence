@@ -304,7 +304,7 @@ const Step4Visual = () => (
 const DashboardContent = () => (
   <div className="h-full w-full bg-[#050505] flex flex-col p-4 md:p-8 text-left overflow-y-auto scrollbar-hide select-none">
     <div className="flex justify-center mb-6 md:mb-10 w-full overflow-hidden">
-      <div className="bg-[#111] border border-white/10 px-2 py-1.5 md:px-4 md:py-2 rounded-2xl flex items-center gap-2 md:gap-6 shadow-xl max-w-full overflow-x-auto scrollbar-hide">
+      <div className="bg-[#111] border border-white/10 px-2 py-1.5 md:px-4 md:py-2 rounded-2xl flex items-center justify-around gap-1 md:gap-6 shadow-xl max-w-full overflow-hidden scale-[0.85] sm:scale-100 origin-center">
         <div className="bg-red-600 p-1.5 rounded-lg shadow-lg shadow-red-600/20 animate-pulse flex-shrink-0">
           <BoltfyLogo className="w-3 h-3 md:w-4 md:h-4" />
         </div>
@@ -453,13 +453,13 @@ const Hero = () => {
       </div>
 
       <div className="py-8 md:py-12 px-4 md:px-6 relative overflow-hidden flex flex-col items-center text-center mt-4 md:mt-8 w-full">
-        <div className="w-full max-w-5xl relative group px-2 md:px-0">
+        <div className="w-full max-w-[95vw] md:max-w-5xl mx-auto relative group px-1 md:px-0">
           <div className="relative z-10 p-2 md:p-3 bg-[#0a0a0a] rounded-t-[2rem] md:rounded-t-[3rem] shadow-[0_80px_160px_-40px_rgba(0,0,0,1)] border-t border-white/10 w-full overflow-hidden">
-            <div className="bg-black rounded-t-[1.5rem] md:rounded-t-[2.5rem] overflow-hidden border border-white/5 aspect-[16/10] relative w-full">
+            <div className="bg-black rounded-t-[1.5rem] md:rounded-t-[2.5rem] overflow-hidden border border-white/5 aspect-auto md:aspect-[16/10] relative w-full h-auto min-h-[350px] md:min-h-0">
               <DashboardContent />
             </div>
           </div>
-          <div className="h-4 md:h-7 bg-[#111] w-[102%] -ml-[1%] md:w-[106%] md:-ml-[3%] rounded-b-xl md:rounded-b-2xl relative z-20 shadow-2xl"></div>
+          <div className="h-4 md:h-7 bg-[#111] w-[101%] -ml-[0.5%] md:w-[106%] md:-ml-[3%] rounded-b-xl md:rounded-b-2xl relative z-20 shadow-2xl"></div>
         </div>
       </div>
     </section>
@@ -653,7 +653,7 @@ const Pricing = () => {
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-black text-white selection:bg-red-600 selection:text-white">
+    <div className="min-h-screen bg-black text-white selection:bg-red-600 selection:text-white overflow-x-hidden">
       <Navbar />
       <main>
         <Hero />
